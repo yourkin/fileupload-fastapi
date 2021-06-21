@@ -10,7 +10,8 @@ PG_PASSWORD=postgres\
 PG_DB=web_dev\
 PG_DB_TEST=web_test\
 ENVIRONMENT=dev\
-TESTING=True
+TESTING=True\
+BACKEND_CORS_ORIGINS=["http://localhost:8004", "https://uploads.example.com"]
 
 ### Bring up the stack
 `docker-compose up --build -d`

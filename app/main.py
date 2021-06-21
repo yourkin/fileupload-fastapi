@@ -2,6 +2,7 @@ import logging
 from pathlib import Path
 
 from fastapi import FastAPI
+from starlette.middleware.cors import CORSMiddleware
 
 from app.api import ping, uploads
 from app.config import get_settings
@@ -10,11 +11,22 @@ from app.db import init_db
 log = logging.getLogger("uvicorn")
 
 
-def additional_setup():
+def additional_setup(app: FastAPI) -> FastAPI:
     settings = get_settings()
 
     # create filestore folder if it does not exist
     Path(settings.filestore_dir).mkdir(parents=True, exist_ok=True)
+
+    # Set all CORS enabled origins
+    if settings.backend_cors_origins:
+        app.add_middleware(
+            CORSMiddleware,
+            allow_origins=[str(origin) for origin in settings.backend_cors_origins],
+            allow_credentials=True,
+            allow_methods=["*"],
+            allow_headers=["*"],
+        )
+    return app
 
 
 def create_application() -> FastAPI:
@@ -24,8 +36,7 @@ def create_application() -> FastAPI:
     return application
 
 
-app = create_application()
-additional_setup()
+app = additional_setup(create_application())
 
 
 @app.on_event("startup")

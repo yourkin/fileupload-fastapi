@@ -22,10 +22,9 @@ def test_multiple_files_upload(test_app_with_db):
     headers = {"Content-Type": "multipart/form-data"}
     files = [
         ("file_list", ("test-10mb.bin", open(path / "data" / "test-10mb.bin", "rb"))),
-        ("file_list", ("test-5mb.bin", open(path / "data" / "test-5mb.bin", "rb")))]
-    response = test_app_with_db.post(
-        "/upload/files", data=files, headers=headers
-    )
+        ("file_list", ("test-5mb.bin", open(path / "data" / "test-5mb.bin", "rb"))),
+    ]
+    response = test_app_with_db.post("/upload/files", data=files, headers=headers)
     print(response.text)
     assert response.status_code == 201
     response_list = response.json()
