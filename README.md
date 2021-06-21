@@ -30,3 +30,9 @@ http://localhost:8004/docs
 
 An alternative implementation would be to use the tus resumable upload protocol
 https://github.com/tus/tus-resumable-upload-protocol
+
+#### Varnish HTTP Cache
+
+It is also possible to use a tus module for the Varnish HTTP Cache
+
+https://code.uplex.de/uplex-varnish/libvmod-tus
