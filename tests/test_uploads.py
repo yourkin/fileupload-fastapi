@@ -10,7 +10,8 @@ def test_upload_file(test_app_with_db):
         response = test_app_with_db.post("/upload/file", files=files)
         assert response.status_code == 201
         response_dict = response.json()
-        assert response_dict["id"]
+        assert isinstance(response_dict, dict)
+        assert isinstance(response_dict["id"], int)
         assert response_dict["filename"] == "test-5mb.bin"
         assert response_dict["created_at"]
 
@@ -27,4 +28,5 @@ def test_multiple_files_upload(test_app_with_db):
     )
     print(response.text)
     assert response.status_code == 201
-    response_dict = response.json()
+    response_list = response.json()
+    assert isinstance(response_list, list)
