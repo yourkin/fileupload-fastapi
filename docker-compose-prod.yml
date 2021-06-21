@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile.prod
+    command: gunicorn --bind 0.0.0.0:$PORT app.main:app -k uvicorn.workers.UvicornWorker
+    volumes:
+      - ./:/usr/src/app
+    ports:
+      - 8004:8000
+    environment:
+      - ENVIRONMENT=prod
+      - TESTING=0
+      - DATABASE_URL=postgres://postgres:postgres@web-db:5432/web_dev
+      - DATABASE_TEST_URL=postgres://postgres:postgres@web-db:5432/web_test
+    depends_on:
+      - web-db
+
+  web-db:
+    build:
+      context: ./db
+      dockerfile: Dockerfile
+    expose:
+      - 5432
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
