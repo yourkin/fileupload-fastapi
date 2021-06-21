@@ -22,6 +22,7 @@ black = "^21.6b0"
 mypy = "^0.902"
 types-aiofiles = "^0.1.5"
 pytest-mypy = "^0.8.1"
+flake8 = "^3.9.2"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
