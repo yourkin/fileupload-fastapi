@@ -8,11 +8,11 @@ services:
     ports:
       - 8004:8000
     environment:
-      - FILESTORE_DIR=/data/filestore
-      - ENVIRONMENT=dev
-      - TESTING=0
-      - DATABASE_URL=postgres://postgres:postgres@web-db:5432/web_dev
-      - DATABASE_TEST_URL=postgres://postgres:postgres@web-db:5432/web_test
+      - FILESTORE_DIR=${FILESTORE_DIR}
+      - ENVIRONMENT=${ENVIRONMENT}
+      - TESTING=${TESTING}
+      - DATABASE_URL=postgres://${PG_USER}:${PG_PASSWORD}@web-db:5432/${PG_DB}
+      - DATABASE_TEST_URL=postgres://${PG_USER}:${PG_PASSWORD}@web-db:5432/${PG_DB_TEST}
     depends_on:
       - web-db
     volumes:
@@ -28,8 +28,8 @@ services:
     expose:
       - 5432
     environment:
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_USER=${PG_USER}
+      - POSTGRES_PASSWORD=${PG_PASSWORD}
 
 volumes:
   filestore:
