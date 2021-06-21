@@ -24,3 +24,8 @@ TESTING=True
 In development mode, OpenAPI documentation is available at
 
 http://localhost:8004/docs
+
+### Alternatives
+
+An alternative implementation would be to use the tus resumable upload protocol
+https://github.com/tus/tus-resumable-upload-protocol
