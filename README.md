@@ -16,6 +16,10 @@ BACKEND_CORS_ORIGINS=["http://localhost:8004", "https://uploads.example.com"]
 ### Bring up the stack
 `docker-compose up --build -d`
 
+### Create the db schema
+
+`docker-compose exec web python app/db.py`
+
 ### Run the unit tests 
 
 `docker-compose exec web python -m pytest`
