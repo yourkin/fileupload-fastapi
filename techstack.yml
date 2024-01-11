@@ -2,11 +2,11 @@ repo_name: yourkin/fileupload-fastapi
 report_id: 9f15122fa725170fec44a04e54cae0f1
 version: 0.1
 repo_type: Public
-timestamp: '2024-01-05T09:12:28+00:00'
+timestamp: '2024-01-11T12:34:36+00:00'
 requested_by: yourkin
 provider: github
 branch: main
-detected_tools_count: 18
+detected_tools_count: 20
 tools:
 - name: Python
   description: A clear and powerful object-oriented programming language, comparable
@@ -31,6 +31,21 @@ tools:
   detection_source: db/create.sql
   last_updated_by: AndrewY
   last_updated_on: 2021-06-21 10:37:53.000000000 Z
+- name: FastAPI
+  description: A high performance, easy to learn, fast to code, ready for production
+    web framework
+  website_url: https://fastapi.tiangolo.com/
+  version: 0.65.3
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Microframeworks (Backend)
+  image_url: https://img.stackshare.io/service/25014/default_f6ff39141b468e832d1bc59fc98a060df604d44d.png
+  detection_source_url: https://github.com/yourkin/fileupload-fastapi/blob/main/poetry.lock
+  detection_source: pyproject.toml
+  last_updated_by: AndrewY
+  last_updated_on: 2021-06-21 10:37:53.000000000 Z
 - name: Heroku Postgres
   description: Heroku's Database-as-a-Service. Based on the most powerful open-source
     database, PostgreSQL
@@ -44,6 +59,18 @@ tools:
   detection_source: db/Dockerfile
   last_updated_by: AndrewY
   last_updated_on: 2021-06-21 10:37:53.000000000 Z
+- name: PostgreSQL
+  description: A powerful, open source object-relational database system
+  website_url: http://www.postgresql.org/
+  open_source: true
+  hosted_saas: false
+  category: Data Stores
+  sub_category: Databases
+  image_url: https://img.stackshare.io/service/1028/ASOhU5xJ.png
+  detection_source_url: https://github.com/yourkin/fileupload-fastapi/blob/main/docker-compose.yml
+  detection_source: docker-compose.yml
+  last_updated_by: AndrewY
+  last_updated_on: 2021-06-21 11:52:28.000000000 Z
 - name: Docker
   description: Enterprise Container Platform for High-Velocity Innovation.
   website_url: https://www.docker.com/
@@ -126,20 +153,6 @@ tools:
   sub_category: PyPI Packages
   image_url: https://img.stackshare.io/package/20099/default_029b9bbfb6be2cd34bebeda5b8e1e80a1d22441c.png
   detection_source_url: https://github.com/yourkin/fileupload-fastapi/blob/main/pyproject.toml
-  detection_source: pyproject.toml
-  last_updated_by: AndrewY
-  last_updated_on: 2021-06-21 10:37:53.000000000 Z
-- name: fastapi
-  description: FastAPI framework
-  package_url: https://pypi.org/project/fastapi
-  version: 0.65.3
-  license: MIT
-  open_source: true
-  hosted_saas: false
-  category: Libraries
-  sub_category: PyPI Packages
-  image_url: https://img.stackshare.io/package/20520/default_ded6d17aa418fbd05ff28b85345c77ab878c6b37.png
-  detection_source_url: https://github.com/yourkin/fileupload-fastapi/blob/main/poetry.lock
   detection_source: pyproject.toml
   last_updated_by: AndrewY
   last_updated_on: 2021-06-21 10:37:53.000000000 Z
@@ -255,3 +268,17 @@ tools:
     detected_date: May 23
     severity: moderate
     first_patched: 2.31.0
+- name: uvicorn
+  description: The lightning-fast ASGI server
+  package_url: https://pypi.org/project/uvicorn
+  version: 0.14.0
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20431/default_f824837db22536768ec317b67275fa384fad7d47.png
+  detection_source_url: https://github.com/yourkin/fileupload-fastapi/blob/main/poetry.lock
+  detection_source: pyproject.toml
+  last_updated_by: AndrewY
+  last_updated_on: 2021-06-21 10:37:53.000000000 Z
