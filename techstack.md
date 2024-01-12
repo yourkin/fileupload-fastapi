@@ -4,9 +4,10 @@
 yourkin/fileupload-fastapi is built on the following main stack:
 
 - [Python](https://www.python.org) – Languages
+- [PostgreSQL](http://www.postgresql.org/) – Databases
 - [SQL](https://en.wikipedia.org/wiki/SQL) – Languages
-- [Heroku Postgres](https://www.heroku.com/postgres) – PostgreSQL as a Service
 - [Shell](https://en.wikipedia.org/wiki/Shell_script) – Shells
+- [FastAPI](https://fastapi.tiangolo.com/) – Microframeworks (Backend)
 - [Docker](https://www.docker.com/) – Virtual Machine Platforms & Containers
 
 Full tech stack [here](/techstack.md)
@@ -18,9 +19,10 @@ Full tech stack [here](/techstack.md)
 yourkin/fileupload-fastapi is built on the following main stack:
 
 - <img width='25' height='25' src='https://img.stackshare.io/service/993/pUBY5pVj.png' alt='Python'/> [Python](https://www.python.org) – Languages
+- <img width='25' height='25' src='https://img.stackshare.io/service/1028/ASOhU5xJ.png' alt='PostgreSQL'/> [PostgreSQL](http://www.postgresql.org/) – Databases
 - <img width='25' height='25' src='https://img.stackshare.io/service/2271/default_068d33483bba6b81ee13fbd4dc7aab9780896a54.png' alt='SQL'/> [SQL](https://en.wikipedia.org/wiki/SQL) – Languages
-- <img width='25' height='25' src='https://img.stackshare.io/service/2516/original.png' alt='Heroku Postgres'/> [Heroku Postgres](https://www.heroku.com/postgres) – PostgreSQL as a Service
 - <img width='25' height='25' src='https://img.stackshare.io/service/4631/default_c2062d40130562bdc836c13dbca02d318205a962.png' alt='Shell'/> [Shell](https://en.wikipedia.org/wiki/Shell_script) – Shells
+- <img width='25' height='25' src='https://img.stackshare.io/service/25014/default_f6ff39141b468e832d1bc59fc98a060df604d44d.png' alt='FastAPI'/> [FastAPI](https://fastapi.tiangolo.com/) – Microframeworks (Backend)
 - <img width='25' height='25' src='https://img.stackshare.io/service/586/n4u37v9t_400x400.png' alt='Docker'/> [Docker](https://www.docker.com/) – Virtual Machine Platforms & Containers
 
 Full tech stack [here](/techstack.md)
@@ -32,7 +34,7 @@ Full tech stack [here](/techstack.md)
 # Tech Stack File
 ![](https://img.stackshare.io/repo.svg "repo") [yourkin/fileupload-fastapi](https://github.com/yourkin/fileupload-fastapi)![](https://img.stackshare.io/public_badge.svg "public")
 <br/><br/>
-|18<br/>Tools used|01/05/24 <br/>Report generated|
+|19<br/>Tools used|01/12/24 <br/>Report generated|
 |------|------|
 </div>
 
@@ -57,12 +59,25 @@ Full tech stack [here](/techstack.md)
 </tr>
 </table>
 
+## <img src='https://img.stackshare.io/frameworks.svg'/> Frameworks (1)
+<table><tr>
+  <td align='center'>
+  <img width='36' height='36' src='https://img.stackshare.io/service/25014/default_f6ff39141b468e832d1bc59fc98a060df604d44d.png' alt='FastAPI'>
+  <br>
+  <sub><a href="https://fastapi.tiangolo.com/">FastAPI</a></sub>
+  <br>
+  <sub>v0.65.3</sub>
+</td>
+
+</tr>
+</table>
+
 ## <img src='https://img.stackshare.io/databases.svg'/> Data (1)
 <table><tr>
   <td align='center'>
-  <img width='36' height='36' src='https://img.stackshare.io/service/2516/original.png' alt='Heroku Postgres'>
+  <img width='36' height='36' src='https://img.stackshare.io/service/1028/ASOhU5xJ.png' alt='PostgreSQL'>
   <br>
-  <sub><a href="https://www.heroku.com/postgres">Heroku Postgres</a></sub>
+  <sub><a href="http://www.postgresql.org/">PostgreSQL</a></sub>
   <br>
   <sub></sub>
 </td>
@@ -122,7 +137,6 @@ Full tech stack [here](/techstack.md)
 |[aiofiles](https://pypi.org/project/aiofiles)|v0.7.0|06/21/21|AndrewY |Apache-2.0|N/A|
 |[asyncpg](https://pypi.org/project/asyncpg)|v0.23.0|06/21/21|AndrewY |Apache-2.0|N/A|
 |[black](https://pypi.org/project/black)|N/A|06/21/21|AndrewY |MIT|N/A|
-|[fastapi](https://pypi.org/project/fastapi)|v0.65.3|06/21/21|AndrewY |MIT|N/A|
 |[flake8](https://pypi.org/project/flake8)|v3.9.2|06/21/21|AndrewY |MIT|N/A|
 |[httpx](https://pypi.org/project/httpx)|v0.18.2|06/21/21|AndrewY |BSD-3-Clause|[CVE-2021-41945](https://github.com/advisories/GHSA-h8pj-cxx2-jfg2) (Critical)|
 |[isort](https://pypi.org/project/isort)|v5.9.3|06/29/21|AndrewY |MIT|N/A|
@@ -130,6 +144,7 @@ Full tech stack [here](/techstack.md)
 |[pytest](https://pypi.org/project/pytest)|v6.2.5|06/26/21|AndrewY |MIT|N/A|
 |[pytest-cov](https://pypi.org/project/pytest-cov)|v2.12.1|06/26/21|AndrewY |MIT|N/A|
 |[requests](https://pypi.org/project/requests)|v2.26.0|06/21/21|AndrewY |Apache-2.0|[CVE-2023-32681](https://github.com/advisories/GHSA-j8r2-6x86-q33q) (Moderate)|
+|[uvicorn](https://pypi.org/project/uvicorn)|v0.14.0|06/21/21|AndrewY |BSD-3-Clause|N/A|
 
 <br/>
 <div align='center'>
