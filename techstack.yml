@@ -2,11 +2,11 @@ repo_name: yourkin/fileupload-fastapi
 report_id: 9f15122fa725170fec44a04e54cae0f1
 version: 0.1
 repo_type: Public
-timestamp: '2024-01-11T12:34:36+00:00'
+timestamp: '2024-01-12T07:44:30+00:00'
 requested_by: yourkin
 provider: github
 branch: main
-detected_tools_count: 20
+detected_tools_count: 19
 tools:
 - name: Python
   description: A clear and powerful object-oriented programming language, comparable
@@ -46,19 +46,6 @@ tools:
   detection_source: pyproject.toml
   last_updated_by: AndrewY
   last_updated_on: 2021-06-21 10:37:53.000000000 Z
-- name: Heroku Postgres
-  description: Heroku's Database-as-a-Service. Based on the most powerful open-source
-    database, PostgreSQL
-  website_url: https://www.heroku.com/postgres
-  open_source: false
-  hosted_saas: true
-  category: Data Stores
-  sub_category: PostgreSQL as a Service
-  image_url: https://img.stackshare.io/service/2516/original.png
-  detection_source_url: https://github.com/yourkin/fileupload-fastapi/blob/main/db/Dockerfile
-  detection_source: db/Dockerfile
-  last_updated_by: AndrewY
-  last_updated_on: 2021-06-21 10:37:53.000000000 Z
 - name: PostgreSQL
   description: A powerful, open source object-relational database system
   website_url: http://www.postgresql.org/
@@ -67,10 +54,10 @@ tools:
   category: Data Stores
   sub_category: Databases
   image_url: https://img.stackshare.io/service/1028/ASOhU5xJ.png
-  detection_source_url: https://github.com/yourkin/fileupload-fastapi/blob/main/docker-compose.yml
-  detection_source: docker-compose.yml
+  detection_source_url: https://github.com/yourkin/fileupload-fastapi/blob/main/db/Dockerfile
+  detection_source: db/Dockerfile
   last_updated_by: AndrewY
-  last_updated_on: 2021-06-21 11:52:28.000000000 Z
+  last_updated_on: 2021-06-21 10:37:53.000000000 Z
 - name: Docker
   description: Enterprise Container Platform for High-Velocity Innovation.
   website_url: https://www.docker.com/
